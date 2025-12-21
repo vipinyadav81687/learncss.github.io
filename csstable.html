@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css table</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 300px;
+            /* border-spacing: 10px 20px; */
+             /* border-collapse: collapse ; */
+             table-layout: auto;
+             empty-cells: hide;
+        }
+        table, td, th {
+            border: 1px solid #000;
+        }
+        td,th{
+            vertical-align: top;
+            padding: 10px 20px;
+        }
+       caption{
+        caption-side:top ;
+       }
+       tr:hover{
+        background-color: gray;
+       }
+       tr:nth-child(even){
+        background-color: gray;
+       }
+    </style>
+</head>
+<body>
+    <h1>yahoo baba: css table properties</h1>
+    <table>
+        <caption>table employee record</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>lastname</th>
+            <th>savings</th>
+        </tr>
+        <tr>
+            <td>mohan lorf fnvjdnvnkjefnk vfejkvkef vefknvk </td>
+            <td>kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>salin</td>
+            <td>khan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Inder</td>
+            <td>singh</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>peter</td>
+            <td>brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+</body>
+</html>
