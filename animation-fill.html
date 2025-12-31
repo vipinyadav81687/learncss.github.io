@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>animation-fill-mode</title>
+    <style>
+        body{
+        font-family: 'Courier New', Courier, monospace;
+        }
+
+        .box{
+            width: 150px;
+            height:150px;
+            background: black;
+            margin-left: 20px;
+            animation: sample 2s 5s;
+            /* animation-fill-mode: backwards; */
+            animation-fill-mode: both;
+
+        }
+        .box:hover{
+            animation-play-state:running ;
+        }
+        @keyframes sample {
+            0%{ background:yellow; width: 250px;}
+            50%{background:green; width: 350px;}
+            100%{ background: red; width:450px;}
+        }
+
+    </style>
+</head>
+<body>  
+    <h1 style="margin-bottom: 50px;">vipin yadav : css animation-fill-mode</h1>
+    <div class="box"></div>
+</body>
+</html>
