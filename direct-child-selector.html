@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>descendent selectors</title>
+    <style>
+
+        #box{
+            border: 2px solid #000;
+            padding: 10px;
+            margin-top: 50px;}
+            #box2{
+                border:2px solid red;
+            }
+         #list li{
+            color:green;
+         }
+         #list > li{
+            color:red;
+         }
+
+         #box > p{
+            color : blue;
+         }
+
+          
+    </style>
+</head>
+<body>
+    <h1> vipin yadav : css direct child selectors</h1>
+   <ul id="list">
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veniam dolores neque delectus eligendi ratione. Repellat, asperiores illum ea, fuga iure non voluptates illo sint blanditiis quasi ab quaerat nostrum!</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veniam dolores neque delectus eligendi ratione. Repellat, asperiores illum ea, fuga iure non voluptates illo sint blanditiis quasi ab quaerat nostrum!</li>
+       <ul id="list">
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veniam dolores neque delectus eligendi ratione. Repellat, asperiores illum ea, fuga iure non voluptates illo sint blanditiis quasi ab quaerat nostrum!</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veniam dolores neque delectus eligendi ratione. Repellat, asperiores illum ea, fuga iure non voluptates illo sint blanditiis quasi ab quaerat nostrum!</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veniam dolores neque delectus eligendi ratione. Repellat, asperiores illum ea, fuga iure non voluptates illo sint blanditiis quasi ab quaerat nostrum!</li>
+   </ul>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veniam dolores neque delectus eligendi ratione. Repellat, asperiores illum ea, fuga iure non voluptates illo sint blanditiis quasi ab quaerat nostrum!</li>
+   </ul>
+    <div id="box"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, voluptas facilis sequi numquam id accusantium voluptatibus explicabo consequuntur, quam quos porro harum veniam ea, atque at eius saepe minima natus.
+        </p>
+       
+        <div> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, voluptas facilis sequi numquam id accusantium voluptatibus explicabo consequuntur, quam quos porro harum veniam ea, atque at eius saepe minima natus.
+        </p></div>
+    </div>
+</body>
+</html>

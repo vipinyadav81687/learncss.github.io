@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>adjacent sibiling selectors</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #box{  
+            border: 2px solod #000;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #box2{
+            border:2px solid red;
+        }
+     
+        ul ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <li>Modi ipsam eveniet beatae. Odit dicta, esse nulla dignissimos doloribus suscipit laboriosam repud</li>
+        iandae quo, sunt ullam debitis, quidem fugit enim similique aperiam.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus dolor suscipit. Dolore ad, reprehenderit possimus numquam rem dolor eveniet libero vel enim? Distinctio nobis impedit et obcaecati nesciunt saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus dolor suscipit. Dolore ad, reprehenderit possimus numquam rem dolor eveniet libero vel enim? Distinctio nobis impedit et obcaecati nesciunt saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus dolor suscipit. Dolore ad, reprehenderit possimus numquam rem dolor eveniet libero vel enim? Distinctio nobis impedit et obcaecati nesciunt saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus dolor suscipit. Dolore ad, reprehenderit possimus numquam rem dolor eveniet libero vel enim? Distinctio nobis impedit et obcaecati nesciunt saepe.</p>
+</body>
+</html>
