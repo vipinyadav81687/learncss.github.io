@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes Form</title>
+
+    <style>
+        body{
+            font: 18px/25px arial;
+            padding: 20px;
+        }
+
+        input:focus{
+         border:3px solid red;
+        }
+        h1{
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select{
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Yahoo Baba : CSS Pseudo Classes Selectors</h1>
+
+    <form>
+
+        <label>First Name :</label>
+        <input type="text"><br><br>
+
+        <label>Last Name :</label>
+        <input type="text"><br><br>
+
+        <label>Your Age :</label>
+        <input type="number" value="10"><br><br>
+
+        <label>Your Email-Id :</label>
+        <input type="email"><br><br>
+
+        <label>Your Hobbies :</label>
+        <input type="checkbox" name="hobby"> <label>Sports</label>
+        <input type="checkbox" name="hobby"> <label>Music</label>
+        <input type="checkbox" name="hobby"> <label>Travel</label>
+        <input type="checkbox" name="hobby"> <label>Books Reading</label>
+        <br><br>
+
+        <label>Your Gender :</label>
+        <input type="radio" name="gender"> <label>Male</label>
+        <input type="radio" name="gender"> <label>Female</label>
+        <br><br>
+
+        <label>Your Country :</label>
+        <select name="country">
+            <option value="none">Select</option>
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="srilanka">Sri Lanka</option>
+            <option value="bangladesh">Bangladesh</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

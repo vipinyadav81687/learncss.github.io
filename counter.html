@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter-Increment</title>
+
+    <style>
+        body{
+            font: 19px/25px Arial;
+            padding: 10px 0 0 20px;
+            counter-reset: my-counter 0;   /* counter start */
+        }
+
+        h1{
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: green;
+        }
+
+h2::before{
+    content: "chapter" counter(my-counter)" > " ;
+    counter-increment: my-counter 1;
+}
+    
+         /* h2{
+            counter-increment: section; 
+        
+           }
+
+        h2::before{
+            content: counter(section) ". ";
+            color: #000;
+            font-weight: bold;
+        } 
+         */
+
+        p{
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Yahoo Baba : CSS Counter-Increment</h1>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Labore reiciendis incidunt rerum voluptatum sint nulla quidem
+        eaque alias, tempore ducimus adipisci ea necessitatibus ut.
+        Placeat.
+    </p>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Labore reiciendis incidunt rerum voluptatum sint nulla quidem
+        eaque alias, tempore ducimus adipisci ea necessitatibus ut.
+        Placeat.
+    </p>
+
+    <h2>Lorem ipsum dolor.</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Labore reiciendis incidunt rerum voluptatum sint nulla quidem
+        eaque alias, tempore ducimus adipisci ea necessitatibus ut.
+        Placeat.
+    </p>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Labore reiciendis incidunt rerum voluptatum sint nulla quidem
+        eaque alias, tempore ducimus adipisci ea necessitatibus ut.
+        Placeat.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Attribute Function</title>
+
+    <style>
+        body{
+            font: 19px/25px arial;
+            padding: 10px 0 0 20px;
+        }
+
+        h1{
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-size: 37px;
+            margin: 200px 0 0 50px;
+        }
+
+        /* CSS attribute function */
+        p::after{
+            content: attr(class);
+            font-size: 20px;
+            color: red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Yahoo Baba : CSS Attribute Function</h1>
+
+    <p class="test">Yahoo</p>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo After Before</title>
+
+    <style>
+        body{
+            font: 20px/28px arial;
+            padding: 20px;
+        }
+
+        h1{
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* before pseudo-element */
+        p::before{
+            content: "👉 ";
+            color: red;
+            font-size: 24px;
+        }
+
+        /* after pseudo-element */
+        p::after{
+            content: " yes";
+            color: green;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Yahoo Baba : ::after & ::before Selectors</h1>
+
+    <p>Learn web design from us.</p>
+
+    <!--
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Modi nihil in animi necessitatibus.</li>
+        <li>Consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Modi nihil in animi dolore natus.</li>
+    </ul>
+    -->
+
+</body>
+</html>
