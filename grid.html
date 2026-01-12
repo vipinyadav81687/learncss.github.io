@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid</title>
+ 
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            padding: 0 0 0 40px;
+        }
+
+        .container{
+            background: #eee;
+            width: 700px;
+            margin: 50px auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 100px 100px;
+
+            /* GRID GAP */
+            grid-row-gap:2px;
+            grid-column-gap:15px;
+            /* grid-gap: 50px; */
+        }
+
+        .items1{
+            background: orangered;
+            color: white;
+            padding: 15px;
+        }
+
+        .items2{
+            background: yellowgreen;
+            color: white;
+            padding: 15px;
+        }
+
+        .items3{
+            background: slateblue;
+            color: white;
+            padding: 15px;
+        }
+
+        .items4{
+            background: hotpink;
+            color: white;
+            padding: 15px;
+        }
+
+        .items5{
+            background: royalblue;
+            color: white;
+            padding: 15px;
+        }
+
+        .items6{
+            background: goldenrod;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> vipin yadav: CSS Grid-Gap</h1>
+
+    <div class="container">
+        <div class="items1">First</div>
+        <div class="items2">Second</div>
+        <div class="items3">Third</div>
+        <div class="items4">Fourth</div>
+        <div class="items5">Fifth</div>
+        <div class="items6">Sixth</div>
+    </div>
+
+</body>
+</html>
