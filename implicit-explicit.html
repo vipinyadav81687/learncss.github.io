@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <title>CSS Grid</title>
+
+    <style>
+        body{
+            font-family: arial, helvetica;
+        }
+
+        h1{
+            padding: 0 0 0 40px;
+        }
+
+        .container{
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+
+            display: grid;
+
+            /* Explicit Grid */
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 60px);
+
+            /* Implicit Grid */
+            grid-auto-rows: 60px;
+            grid-gap: 5px;
+        }
+
+        .item{
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .item1{ background: orangered; }
+        .item2{ background: yellowgreen; }
+        .item3{ background: mediumpurple; }
+        .item4{ background: hotpink; }
+        .item5{ background: royalblue; }
+        .item6{ background: orchid; }
+        .item7{ background: goldenrod; }
+        .item8{ background: mediumseagreen; }
+    </style>
+</head>
+
+<body>
+
+    <h1>vipin yadav : CSS Grid Implicit & Explicit</h1>
+
+    <div class="container">
+        <div class="item item1">One</div>
+        <div class="item item2">Two</div>
+        <div class="item item3">Three</div>
+        <div class="item item4">Four</div>
+        <div class="item item5">Five</div>
+        <div class="item item6">Six</div>
+        <div class="item item7">Seven</div>
+        <div class="item item8">Eight</div>
+    </div>
+
+</body>
+</html>
