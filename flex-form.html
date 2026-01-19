@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#fff;
+        }
+
+        h1{
+            margin-left: 40px;
+        }
+
+        #wrapper{
+            width: 80%;
+            margin: 30px auto;
+            background: #eee;
+            padding: 20px;
+        }
+
+        #wrapper ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrapper li{
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        #wrapper li label{
+            flex: 1;
+            font-weight: bold;
+        }
+
+        #wrapper li input{
+            flex: 4;
+            padding: 6px;
+            border: 1px solid #999;
+        }
+
+        #wrapper li button{
+            padding: 6px 12px;
+        }
+
+        /* Responsive Media Queries */
+
+        @media screen and (min-width:992px){
+            #wrapper li input{
+                flex: 6;
+            }
+        }
+
+        @media screen and (min-width:768px){
+            #wrapper li input{
+                flex: 4;
+            }
+        }
+
+        @media screen and (min-width:500px){
+            #wrapper li input{
+                flex: 4;
+            }
+        }
+
+        @media screen and (min-width:300px){
+            #wrapper li input{
+                flex: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Yahoo Baba : Align Form with Flexbox</h1>
+
+<div id="wrapper">
+    <form>
+        <ul>
+            <li>
+                <label>Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>Class Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>Email Address</label>
+                <input type="email">
+            </li>
+            <li>
+                <label></label>
+                <button type="submit">Save</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>
+ 
