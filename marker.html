@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Element ::marker</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        /* ::marker pseudo-element */
+        li::marker{
+            color: orange;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ol li::marker{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Element ::marker</h1>
+
+    <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+    <ol>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ol>
+
+</body>
+</html>
