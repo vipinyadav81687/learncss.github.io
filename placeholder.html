@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:placeholder-shown</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        input{
+            width: 250px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        /* placeholder-shown pseudo-class */
+        input:placeholder-shown{
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>:placeholder-shown</h1>
+
+    <form>
+        <input type="text" placeholder="Enter Name"><br><br>
+        <input type="text" placeholder="Enter Address"><br><br>
+        <input type="number" placeholder="Enter Percentage"><br><br>
+        <input type="email" placeholder="Enter Email"><br><br>
+        <input type="date"><br><br>
+    </form>
+
+</body>
+</html>
