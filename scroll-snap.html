@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Snap</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        /* Scroll container */
+        .container{
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        /* Each section */
+        .section{
+            min-height: 100vh;
+            padding: 60px 40px;
+            scroll-snap-align: start;
+        }
+
+        .section h2{
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Background colors */
+        #section1{
+            background-color: #fad390;
+        }
+
+        #section2{
+            background-color: #82ccdd;
+        }
+
+        #section3{
+            background-color: #b8e994;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="section" id="section1">
+            <h2>Section 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellat, aspernatur, molestias. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Repellat, aspernatur, molestias.
+            </p>
+        </div>
+
+        <div class="section" id="section2">
+            <h2>Section 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellat, aspernatur, molestias. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Repellat, aspernatur, molestias.
+            </p>
+        </div>
+
+        <div class="section" id="section3">
+            <h2>Section 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellat, aspernatur, molestias. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Repellat, aspernatur, molestias.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
