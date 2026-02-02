@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display : Table</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #fff;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2{
+            text-align: center;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        /* TABLE */
+        #table{
+            display: table;
+            width: 70%;
+            margin: auto;
+            border: 2px solid #000;
+            border-collapse: collapse;
+        }
+
+        .row{
+            display: table-row;
+        }
+
+        .col{
+            display: table-cell;
+            border: 1px solid #000;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        /* HEADER */
+        .header{
+            background: #b7ddee;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* COLUMN COLORS */
+        .roll{
+            background: #9ac230;
+            width: 15%;
+        }
+
+        .name{
+            background: #ffcccc;
+            width: 65%;
+        }
+
+        .age{
+            width: 20%;
+        }
+
+        /* FOOTER */
+        .footer{
+            background: #8fe28f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Display : Table</h1>
+<h2>STUDENT INFORMATION</h2>
+
+<div id="table">
+
+    <div class="row header">
+        <div class="col">Roll No.</div>
+        <div class="col">Student Name</div>
+        <div class="col">Age</div>
+    </div>
+
+    <div class="row">
+        <div class="col roll">1</div>
+        <div class="col name">Vipin Yadav</div>
+        <div class="col age">25</div>
+    </div>
+
+    <div class="row">
+        <div class="col roll">2</div>
+        <div class="col name">
+            Salman Khan Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nostrum consequatur, est exercitationem iste id deserunt!
+        </div>
+        <div class="col age">24</div>
+    </div>
+
+    <div class="row">
+        <div class="col roll">3</div>
+        <div class="col name">Sahid Kapoor</div>
+        <div class="col age">23</div>
+    </div>
+
+    <div class="row footer">
+        <div class="col roll"></div>
+        <div class="col name">Total Records :</div>
+        <div class="col age">3</div>
+    </div>
+
+</div>
+
+</body>
+</html>
