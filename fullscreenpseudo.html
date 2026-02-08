@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fullscreen Demo</title>
+
+<style>
+/* Normal state */
+#box {
+  width: 300px;
+  height: 200px;
+  background: lightblue;
+  padding: 20px;
+}
+
+/* Fullscreen state */
+#box:fullscreen {
+  background: lightgreen;
+  font-size: 40px;
+}
+
+/* Fullscreen text color */
+#box:fullscreen p {
+  color: red;
+}
+
+/* Not fullscreen text color */
+#box:not(:fullscreen) p {
+  color: green;
+}
+
+/* Browser prefixes */
+#box:-webkit-full-screen {
+  background: lightgreen;
+  font-size: 40px;
+}
+
+#box:-moz-full-screen {
+  background: lightgreen;
+  font-size: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="box">
+  <p>I'm in fullscreen mode!</p>
+</div>
+
+<br>
+
+<button onclick="goFullscreen()">Go Full Screen</button>
+
+<script>
+function goFullscreen() {
+  const box = document.getElementById("box");
+
+  if (box.requestFullscreen) {
+    box.requestFullscreen();
+  } else if (box.webkitRequestFullscreen) {
+    box.webkitRequestFullscreen();
+  } else if (box.mozRequestFullScreen) {
+    box.mozRequestFullScreen();
+  }
+}
+</script>
+
+</body>
+</html>

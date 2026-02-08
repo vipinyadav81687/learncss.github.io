@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:has pseudo class</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        div:has(h2, h3, h4, p) {
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section class="abc">
+            <h2>Vipin yada</h2>
+        </section>
+    </div>
+</body>
+</html>

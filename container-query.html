@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Container Query</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    /* Parent ko container banao */
+    .wrapper{
+        width: 60%;
+        resize: horizontal;
+        overflow: auto;
+        border: 2px solid #000;
+        padding: 20px;
+
+        container-type: inline-size;
+        container-name: cardwrap;
+    }
+
+    /* Card */
+    .card{
+        border: 2px solid #555;
+        padding: 15px;
+        background: #f9f9f9;
+    }
+
+    .card h2{
+        font-size: 24px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    /* =========================
+       CONTAINER QUERY
+    ========================= */
+    @container cardwrap (max-width: 400px){
+        .card h2{
+            font-size: 18px;
+            color: red;
+        }
+
+        .card p{
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS @container Query Example</h1>
+<p>Box ko resize karo aur text size change hote dekho.</p>
+
+<div class="wrapper">
+    <div class="card">
+        <h2>Container Query</h2>
+        <p>
+            Ye text container ke size ke hisaab se change hota hai,
+            screen size ke hisaab se nahi.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

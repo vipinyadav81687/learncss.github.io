@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min, Max, Clamp</title>
+
+  <style>
+    body {
+      padding: 30px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .element {
+      background: pink;
+
+      /* Responsive padding */
+      /* Top-Bottom = max(30px, 5vw) */
+      /* Left-Right = 10px */
+      /* padding: max(30px, 5vw) 10px; */
+     padding: min(30px, 5vw) 10px;
+     width:clamp(350px,50%,500px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="element">
+    Yahoo Baba
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Print Media</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: darkblue;
+        }
+
+        .box{
+            background: white;
+            padding: 20px;
+            border: 2px solid #000;
+        }
+
+        .btn{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* =========================
+           PRINT MEDIA CSS
+        ========================= */
+        @media print {
+
+            body{
+                background: white;
+            }
+
+            h1{
+                color: black;
+            }
+
+            .btn{
+                display: none;   /* Print me button hide */
+            }
+
+            .box{
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Print Media Example</h1>
+
+<div class="box">
+    <p>
+        Ye content screen pe bhi dikhega aur print me bhi.
+        Lekin button print me hide ho jayega.
+    </p>
+</div>
+
+<button class="btn" onclick="window.print()">Print Page</button>
+
+</body>
+</html>
