@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Block Size & Inline Size</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .box{
+        background: #f2f2f2;
+        border: 2px solid #000;
+        padding: 10px;
+
+        /* Logical sizes */
+        block-size: 120px;     /* height */
+        inline-size: 200px;    /* width */
+    }
+
+    .box2{
+        background: #dff9fb;
+        border: 2px solid blue;
+        padding: 10px;
+        margin-top: 30px;
+
+        /* Min & Max logical sizes */
+        min-block-size: 80px;
+        max-block-size: 160px;
+
+        min-inline-size: 150px;
+        max-inline-size: 300px;
+    }
+
+    /* Writing mode demo */
+    .vertical{
+        writing-mode: vertical-rl;
+        border: 2px solid red;
+        margin-top: 30px;
+        padding: 10px;
+
+        block-size: 200px;
+        inline-size: 120px;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS block-size & inline-size</h1>
+
+<div class="box">
+    Ye box block-size (height) aur inline-size (width) ka example hai.
+</div>
+
+<div class="box2">
+    Ye box min/max block-size aur inline-size ka example hai.
+</div>
+
+<div class="vertical">
+    Vertical writing mode example.
+</div>
+
+</body>
+</html>
+  

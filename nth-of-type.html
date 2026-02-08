@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS nth-of-type – Single File Demo</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    section{
+        margin-bottom: 30px;
+    }
+
+    /* Example 1: 2nd paragraph */
+    .ex1 p:nth-of-type(2){
+        color: red;
+        font-weight: bold;
+    }
+
+    /* Example 2: odd / even list items */
+    .ex2 li:nth-of-type(odd){
+        background: #dfe6e9;
+    }
+    .ex2 li:nth-of-type(even){
+        background: #74b9ff;
+    }
+
+    /* Example 3: every 3rd div */
+    .ex3 div:nth-of-type(3n){
+        border: 2px solid green;
+    }
+
+    /* Example 4: same type counting */
+    .ex4 p:nth-of-type(2){
+        color: blue;
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS :nth-of-type() – All in One File</h1>
+
+<section class="ex1">
+    <h2>Example 1: 2nd Paragraph</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2 (selected)</p>
+    <p>Paragraph 3</p>
+</section>
+
+<section class="ex2">
+    <h2>Example 2: Odd / Even List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</section>
+
+<section class="ex3">
+    <h2>Example 3: Every 3rd Div</h2>
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3 (selected)</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6 (selected)</div>
+</section>
+
+<section class="ex4">
+    <h2>Example 4: Same Type Counting</h2>
+    <p>Para 1</p>
+    <span>Span (ignored)</span>
+    <p>Para 2 (selected)</p>
+</section>
+
+</body>
+</html>

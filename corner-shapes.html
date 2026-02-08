@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Corner Shapes</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+/* Common */
+.box{
+    width:180px;
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-weight:bold;
+}
+
+/* 1. Rounded */
+.rounded{
+    background:#4CAF50;
+    border-radius:20px;
+}
+
+/* 2. Different corners */
+.multi{
+    background:#2196F3;
+    border-radius:10px 30px 50px 0;
+}
+
+/* 3. Circle */
+.circle{
+    width:120px;
+    height:120px;
+    background:orange;
+    border-radius:50%;
+}
+
+/* 4. Cut corners */
+.cut{
+    background:crimson;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+}
+
+/* 5. Fancy gradient */
+.fancy{
+    background:linear-gradient(135deg,#ff6a00,#ee0979);
+    border-radius:25px;
+}
+
+/* 6. Hover animation */
+.hover{
+    background:#673ab7;
+    border-radius:0;
+    transition:0.4s;
+}
+.hover:hover{
+    border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box rounded">Rounded</div>
+<div class="box multi">Multi</div>
+<div class="circle">Circle</div>
+<div class="box cut">Cut</div>
+<div class="box fancy">Fancy</div>
+<div class="box hover">Hover</div>
+
+</body>
+</html>

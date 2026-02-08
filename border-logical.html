@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Border Inline & Block</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .box{
+        width: 300px;
+        padding: 15px;
+        background: #f2f2f2;
+
+        /* Logical borders */
+        border-inline: 4px solid red;   /* left + right */
+        border-block: 4px solid blue;   /* top + bottom */
+
+        margin-bottom: 30px;
+    }
+
+    .box2{
+        width: 300px;
+        padding: 15px;
+        background: #dff9fb;
+
+        /* Different start & end borders */
+        border-inline-start: 5px solid green;
+        border-inline-end: 5px dashed orange;
+
+        border-block-start: 4px solid purple;
+        border-block-end: 4px dotted brown;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS Border Inline & Block</h1>
+
+<div class="box">
+    Ye box border-inline aur border-block ka example hai.
+</div>
+
+<div class="box2">
+    Ye box border start aur end ka example hai.
+</div>
+
+</body>
+</html>
+

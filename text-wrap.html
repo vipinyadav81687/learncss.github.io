@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Text Wrap</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    h2{
+        margin-top: 40px;
+    }
+
+    .box{
+        width: 220px;
+        border: 2px solid #000;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* 1️⃣ Normal wrapping (default) */
+    .normal{
+        white-space: normal;
+    }
+
+    /* 2️⃣ No wrap */
+    .nowrap{
+        white-space: nowrap;
+    }
+
+    /* 3️⃣ Break long words */
+    .break-word{
+        overflow-wrap: break-word; /* recommended */
+        word-wrap: break-word;     /* old support */
+    }
+
+    /* 4️⃣ Force break anywhere */
+    .anywhere{
+        overflow-wrap: anywhere;
+    }
+
+    /* 5️⃣ Preserve spaces & line breaks */
+    .pre{
+        white-space: pre-wrap;
+    }
+
+    /* 6️⃣ NEW CSS (modern) */
+    .text-wrap{
+        text-wrap: balance; /* headings ke liye best */
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS Text Wrap Examples</h1>
+
+<h2>1. Normal Wrap</h2>
+<div class="box normal">
+    This is a normal wrapping text example.
+</div>
+
+<h2>2. No Wrap</h2>
+<div class="box nowrap">
+    ThisIsAVeryVeryLongTextWithoutAnySpaces
+</div>
+
+<h2>3. Break Long Words</h2>
+<div class="box break-word">
+    ThisIsAVeryVeryLongTextWithoutAnySpaces
+</div>
+
+<h2>4. Break Anywhere</h2>
+<div class="box anywhere">
+    ThisIsAVeryVeryLongTextWithoutAnySpaces
+</div>
+
+<h2>5. Pre Wrap</h2>
+<div class="box pre">
+Line 1
+Line 2
+Line 3
+</div>
+
+<h2>6. text-wrap: balance</h2>
+<div class="box text-wrap">
+    CSS Text Wrap Balance Example Heading
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Margin Inline & Block</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .box{
+        width: 300px;
+        background: #f2f2f2;
+        border: 2px solid #000;
+
+        /* Logical margins */
+        margin-inline: auto;      /* left + right auto (center) */
+        margin-block: 20px;       /* top + bottom */
+        padding: 10px;
+    }
+
+    .box2{
+        width: 300px;
+        background: #dff9fb;
+        border: 2px solid blue;
+
+        /* Different values */
+        margin-inline: 10px 40px; /* start end */
+        margin-block: 5px 25px;   /* top bottom */
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS Margin Inline & Block</h1>
+
+<div class="box">
+    Ye box margin-inline aur margin-block ka example hai.
+</div>
+
+<div class="box2">
+    Ye box different margin values ke saath hai.
+</div>
+
+</body>
+</html>
